@@ -4,32 +4,15 @@ Author: Foti Mougos<br>
 [Deployed At Github](https://foteye.github.io/Wk10-OOP-TemplateEngine-FotiMougos/ "Deployed at Github")
 
 ### Brief:
-I have created a command-line application that dynamically generates a README.md from a user's input. The application will be invoked with the following command:
+I have built a software engineering team generator command line application. The application prompts the user for information about the team manager and then information about the team members. The user can input any number of team members, and they may be a mix of engineers and interns. 
 
-```sh
-node index.js
-```
-The user will be prompted for their GitHub username, which will be used to make a call to the GitHub API to retrieve their email and profile image. They will then be prompted with questions about their project.
+When the user has completed building the team, the application create an HTML file that displays a nicely formatted team roster based on the information provided by the user.
 
-The README will be populated with the following:
-
-* Project title
-* Description
-* Table of Contents
-* Installation
-* Usage
-* License
-* Contributing
-* Tests
-* Questions
-  * User GitHub profile picture
-  * User GitHub email
-
+This assignment also passes all unit tests.
 
 ### Lessons Learned:
 
-  * You would probably never do this in real world. I think github support templates already.
-  * Good chance to experiment with async and awaits etc. ES6 has some awesome functionality that I've never had an opportunity to use.
-  * Node is a bit of a different beast, different way of thinking when you don't have to worry about the DOM
-  * Not a single 'var' in sight. Life is good.
-  * Template literals will take the whitespace on each line
+  * LAST MINUTE HOMEWORK FOTI
+  * Remember to npm install
+  * Tests done by jest are really powerful if used correctly
+  * TDD is not something I'm particularly comfortable with when designing something from scratch. I think it can be more handy when extending functionality of an existing program or working in a domain you're more comfortable with.
