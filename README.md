@@ -15,4 +15,5 @@ This assignment also passes all unit tests.
   * LAST MINUTE HOMEWORK FOTI
   * Remember to npm install
   * Tests done by jest are really powerful if used correctly
-  * TDD is not something I'm particularly comfortable with when designing something from scratch. I think it can be more handy when extending functionality of an existing program or working in a domain you're more comfortable with.
+  * TDD is not something I'm particularly comfortable with when designing something from scratch. I think it can be more handy when extending functionality of an existing program or working in a domain you're more comfortable with, like this instance
+  * no time for bonus
