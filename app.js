@@ -7,12 +7,12 @@ const fs = require("fs");
 const OUTPUT_DIR = path.resolve(__dirname, "output")
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
-const render = require("./lib/htmlRenderer");
+const Render = require("./lib/htmlRenderer");
 
 async function main() {
     const team = await getTeam();
     const teamClassMap = mapTeamToClass(team);
-    const content = render(teamClassMap);
+    const content = Render(teamClassMap);
     writeHTMLFile(content);
 }
 
@@ -71,17 +71,17 @@ function mapTeamToClass(team){
     return team.map((employee) => {
         switch (employee.role){
             case 'Manager':
-                return new manager(employee.name, employee.id, employee.email, employee.officeNumber);
+                return new Manager(employee.name, employee.id, employee.email, employee.officeNumber);
                 break;
             case 'Engineer':
-                return new engineer(employee.name, employee.id, employee.email, employee.github);
+                return new Engineer(employee.name, employee.id, employee.email, employee.github);
                 break;
             case 'Intern':
-                return new intern(employee.name, employee.id, employee.email, employee.school);
+                return new Intern(employee.name, employee.id, employee.email, employee.school);
                 break;
             default:
                 //Uhhhh return nothing?
-                console.log("invalid employee role");
+                console.log("Invalid employee role");
                 return;
         }
     });
